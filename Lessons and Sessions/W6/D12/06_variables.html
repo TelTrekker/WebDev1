@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+
+    <style>
+        :root {
+            --primary_color: #522B47;
+            --secondary_color: #8DAA9D;
+            --light_color: #FBF5F3;
+        }
+
+        body {
+            font-family:Arial, Helvetica, sans-serif;
+            font-size:50px;
+        }
+
+        h1 {
+            color: var(--primary_color);
+        }
+
+        section {
+            color: var(--primary_color);
+        }
+
+        footer {
+            color: var(--primary_color);
+        }
+
+        .btn {
+            padding: 10px;
+            font-size: 18px;
+            color: var(--secondary_color);
+        }
+
+        /* Misc */
+
+        /* Empty selector */
+        p:empty{
+            width: 100px;
+            height:100px;
+            background: black;
+        }
+
+        /* Negation */
+        li:not(:first-child) {
+            color:green;
+        }
+
+        
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Title</h1>
+</header>
+
+<main>
+    <section>Lorem, ipsum.</section>
+    <section>Lorem, ipsum.</section>
+    <button class="btn">CLick Me</button>
+</main>
+
+<footer>Copyright&copy;</footer>
+
+<p></p>
+<p>111</p>
+<p></p>
+
+<ul>
+    <li>Rafael</li>
+    <li>Kien</li>
+    <li>Aikee</li>
+    <li>Lianor</li>
+    <li>Ramoya</li>
+    <li>Ellen</li>
+    <li>Alicia</li>
+    <li>Ellained</li>
+    <li>Shiela</li>
+</ul>
+    
+</body>
+</html>

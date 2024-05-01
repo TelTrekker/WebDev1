@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: row;
+            align-items: stretch;
+            justify-content: center;
+
+            background: #aaa;
+            height: 50vh;
+        }
+
+        #box1{
+            background-color: red;
+            /* height: 100px;
+            width: 200px; */
+            /* align-self: end; */
+            /* flex-shrink: 0;
+            flex-grow: 1;
+            flex-basis: 100px; */
+            flex: 3;
+        }
+        
+        #box2{
+            background-color: green;
+            /* height: 100px;
+            width: 200px;
+            flex-shrink: 0;
+            flex-grow: 1; */
+            flex: 6;
+        }
+        
+        #box3{
+            background-color: blue;
+            height: 100px;
+            width: 200px;
+            /* flex-grow: 1; */
+            flex: 7;
+        }
+
+        header{
+            background: #3b5998;
+            color: white;
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        h1{
+            margin-left: 20px;
+        }
+        nav{
+            margin-right: 20px;
+        }
+
+        ul{
+            display: flex;
+            gap: 20px;
+
+        }
+
+        li{
+            list-style: none;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="container">
+        <div id="box1">b1</div>
+        <div id="box2">b2</div>
+        <!-- <div id="box3">b3</div> -->
+    </div>
+
+    <header>
+        <h1>NAVIGATION</h1>
+        <nav>
+            <ul>
+                <li>HOME</li>
+                <li>ABOUT</li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!Doctype html>
+<html>
+<head>
+
+<style>
+
+/* CSS RESET */
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  
+}
+
+.btn {
+  text-decoration:none;
+  background-color: #39569c;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  
+  
+  visibility: hidden;
+}
+
+.btn:hover {
+   background-color: #18453b;
+   color: cyan;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background-color: #39569c;
+  color: white;
+  padding: 10px;
+  
+  visibility: hidden;
+}
+
+header a {
+  color: white;
+}
+
+header h1 {
+  float:left;
+  
+}
+
+ul li {
+  list-style: none;
+}
+
+header nav {
+  float:right;
+}
+
+header nav ul li {
+  float:left;
+  list-style: none;
+  margin-right: 10px;
+}
+
+.clear {
+  clear:both;
+}
+
+.container {
+  margin: auto;
+  max-width: 960px;
+}
+
+section {
+  border: 1px solid #ccc;
+  float:left;
+  min-height: 500px;
+  background: #fff;
+}
+
+#sidebar {
+  width: 33%;
+}
+
+#main-content {
+  width: 67%;
+}
+
+main {
+  background-color: #eee;
+}
+
+#sidebar ul {
+  margin:20px;
+}
+
+#sidebar ul li {
+  padding: 10px;
+  border-bottom: 1px solid gray;
+}
+
+#sidebar ul li a {
+  color: #39569c;
+  font-size: 22px;
+}
+
+#sidebar ul li a:hover {
+  color: #18453b;
+  text-decoration: underline;
+  
+}
+
+</style>
+
+</head>
+<body>
+
+
+<header>
+  <div class="container">
+	  <h1>
+		<a href="index.html">ISACT</a>
+	  </h1>
+	  <nav>
+		<ul>
+		  <li>Home</li>
+		  <li>About</li>
+		  <li>Products</li>
+		</ul>
+	  </nav>
+	  <div class="clear"></div>
+  </div>
+</header>
+
+
+<main>
+  <div class="container">
+	<section id="sidebar">
+		<ul>
+			<li><a href="">News</a></li>
+			<li><a href="">Links</a></li>
+			<li><a href="">Sources</a></li>
+		</ul>
+	</section>
+	
+	<section id="main-content">
+	   <h2>Main Content</h2>
+	   <br>
+       <a href="" class="btn">Submit</a>
+	   <br>
+	   lorem ipsum dolores sit amet
+	</section>
+	
+	<div class="clear"></div>
+  </div>
+</main>
+
+
+</body>
+</html>

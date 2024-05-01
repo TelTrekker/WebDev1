@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background: #ccc;
+
+            position:relative;
+            top:0;
+            left:0;
+            right:0;
+            bottom:0;
+
+
+            animation: animate1 5s ease normal infinite;
+        }
+
+        @keyframes animate1 {
+            25% {
+                top:0;
+               left:300px;
+               border-radius:10%;
+            }
+            50% {
+               left:300px;
+               top: 500px;
+               border-radius:30%;
+            }
+            75% {
+               left:0;
+               top: 500px;
+               border-radius:50%;
+            }
+            100% {
+               left:0;
+               top: 0;
+               border-radius:0;
+               background:red;
+            }
+        }
+
+        p {
+            position:relative;
+            font-size: 30px;
+
+            left: -200px;
+
+            animation: textAnim 5s ease-in-out infinite;
+        }
+
+        @keyframes textAnim {
+            to {
+                left: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        
+    </div>
+
+    <p>Flying Text</p>
+    
+</body>
+</html>

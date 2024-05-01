@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISACT Restaurant</title>
+
+    <script src="https://kit.fontawesome.com/6a7678e057.js" crossorigin="anonymous"></script>
+
+    <style>
+      * {
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+      }
+      header {
+        background-color:#323232;
+        height: 80px;
+      }
+
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      h1 {
+        /* border:1px solid red; */
+        color: #fff;
+        float:left;
+        margin-top: 20px;
+        margin-left: 20px;
+      }
+      nav {
+        float:right;
+        margin-top: 30px;
+        margin-right: 20px;
+      }
+
+      nav ul li {
+        float:left;
+        list-style:none;
+        margin-right: 20px;
+      }
+
+      nav ul li a {
+        
+        font-size: 22px;
+      }
+
+      .current {
+        color: #d27d46;
+      }
+
+      .clr {
+        clear:both;
+      }
+
+      #hero {
+        height: 500px;
+        background: url(img/hero.jpg) no-repeat center center/cover;
+      }
+
+      #hero h2 {
+        padding-top: 120px;
+        font-size: 60px;
+      }
+
+      .hero_container {
+        text-align:center;
+        color:#fff;
+      }
+
+      #about {
+        /* padding-top: 50px;
+        padding-left: 20px;
+        padding-right: 20px; 
+        padding-bottom: 50px; */
+
+        /* padding: 50px 20px 50px 20px; */
+
+        padding: 50px 20px;
+        text-align:center;
+      }
+
+      #about h2 {
+        font-size: 40px;
+        margin-bottom: 50px;
+      }
+
+      #about p {
+        margin-bottom: 50px;
+        font-size: 22px;
+      }
+
+      #menu_left {
+        width: 50%;
+        float:left;
+      }
+
+      #menu_left img {
+        width: 100%;
+        height: 440px;
+      } 
+
+      #menu_right {
+        float:left;
+        padding: 20px;
+        padding-left: 50px;
+      }
+
+      #menu_right h2 {
+        font-size: 50px;
+        margin-bottom: 20px;
+        color: #d27d46;
+      }
+
+      #menu_right li {
+        list-style: none;
+        font-size: 50px;
+      }
+
+      #menu_right li:hover {
+        text-decoration: underline;
+        cursor:pointer;
+      }
+
+      .btn {
+        background-color: #d27d46;
+        font-size: 20px;
+        padding: 20px;
+        border-radius: 10px;
+        border: none;
+        cursor:pointer;
+        color:white;
+      }
+
+      .btn:hover {
+        color: #ccc;
+        
+        background-color: #8b532d;
+      }
+
+      #products {
+        background-color: #ccc;
+      }
+
+      #box1,
+      #box2,
+      #box3 {
+        float:left;
+        width: 32%;
+        margin-right: 1%;
+        /* color:#fff; */
+        text-align:center;
+      }
+
+      #products {
+        margin-top: 20px;
+        padding: 10px;
+      }
+      #products h3 {
+        font-size: 40px;
+        margin-bottom: 20px;
+      }
+
+      #products p {
+        margin-bottom: 20px;
+        font-size: 22px;
+      }
+
+      #products img {
+        width: 100%;
+        height: 500px;
+        border-radius: 10px;
+        object-fit:cover;
+      }
+
+      #products h3 i {
+        font-size: 30px;
+        margin-right: 5px;
+      }
+
+      footer {
+        background-color: #323232;
+        text-align:center;
+      }
+
+      footer img {
+        width: 100px;
+        height: 100px;
+        margin-left:20px;
+      }
+
+      #diamond,
+      #contact-us,
+      #numbers {
+        float:left;
+        width: 33%;
+        color:white;
+        padding-top: 10px;
+      }
+
+    </style>
+</head>
+<body>
+
+    <header>
+      <h1>ISACT</h1>
+      <nav>
+        <ul>
+            <li><a href="" class="current">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Menu</a></li>
+            <li><a href="">Contact Us</a></li>
+        </ul>
+      </nav>
+      <div class="clr"></div>
+    </header>
+
+    <main>
+      <section id="hero">
+        <div class="hero_container">
+          <h2>Our restaurant, satisfaction guaranteed</h2>
+        </div>
+      </section>
+
+      <section id="about">
+        <h2>Welcome to our small restaurant</h2>
+
+        <p>Some of the country's finest food is served on our small restaurant. Nestled in the heart of Apalit Pampangan right besides Larlin. Our guest is so close to nature yet never far from good food</p>
+
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse deleniti vel molestias quo autem facilis non eius rem aspernatur ex? Neque repellendus expedita distinctio hic perferendis, deleniti qui eius? Est a quaerat alias ipsa earum, odit maxime omnis! Aliquid, exercitationem officia! At quia ipsum repellendus magnam facere adipisci aliquam enim!</p>
+
+
+      </section>
+
+      <section id="menu">
+        <div id="menu_left">
+          <img src="img/menu.jpg" alt="">
+        </div>
+        <div id="menu_right">
+          <h2>Menu</h2>
+          <ul>
+            <li>Breads</li>
+            <li>Coffee</li>
+            <li>Pasta</li>
+            <li>Cake</li>
+          </ul>
+
+          <br>
+          <button class="btn">Order Now</button>
+        </div>
+        <div class="clr"></div>
+      </section>
+
+      <section id="products">
+        <div id="box1">
+          <h3>
+            Pizza
+            <i class="fas fa-pizza-slice"></i></h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis quod, obcaecati at velit dolor tempora nesciunt itaque nisi nulla dolorum!</p>
+          <img src="img/pizza.jpg" alt="pizza">
+        </div>
+        <div id="box2">
+          <h3>
+            Pasta
+          <i class="fas fa-utensils"></i>
+        </h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis quod, obcaecati at velit dolor tempora nesciunt itaque nisi nulla dolorum!</p>
+
+          <img src="img/pasta.jpg" alt="pasta">
+        </div>
+        <div id="box3">
+          <h3>
+            Coffee
+            <i class="fas fa-coffee"></i></h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis quod, obcaecati at velit dolor tempora nesciunt itaque nisi nulla dolorum!</p>
+
+          <img src="img/coffee.jpg" alt="coffee">
+        </div>
+
+        <div class="clr"></div>
+      </section>
+    </main>
+
+    <footer>
+      <div id="diamond">
+        <img src="img/gem-logo.png" alt="">
+      </div>
+      <div id="contact-us">
+        <h3>Find Us</h3>
+        <p>Address</p>
+        <a href="">View on Google Maps</a>
+      </div>
+      <div id="numbers">
+        <h3>Reservation</h3>
+        <p>T: 123-456-7890</p>
+        <p>M: 123-456-7890</p>
+      </div>
+
+      <div class="clr"></div>
+
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Targeted Selectors</title>
+
+    <style>
+        body {
+            font-family:Arial, Helvetica, sans-serif;
+            font-size:50px;
+        }
+
+        li:first-child {
+            background:#ccc;
+        }
+
+        li:last-child {
+            background:#ccc;
+        }
+
+        /* Middle */
+        li:nth-child(4) {
+            /* background:#FFab56; */
+        }
+
+
+
+        /* Cycle */
+        li:nth-child(2n+5) {
+            /* background:#333; */
+        }
+
+        /* odd and even */
+        li:nth-child(even) {
+            background:#333;
+        }
+
+        /* Nth of Type */
+        p:first-of-type {
+            color:green;
+        }
+
+        p:nth-of-type(2n) {
+            color:red;
+        }
+
+        p:last-of-type {
+            color:red;
+        }
+
+        
+
+        
+    </style>
+</head>
+<body>
+
+<ul>
+    <li>Rafael</li>
+    <li>Kien</li>
+    <li>Aikee</li>
+    <li>Lianor</li>
+    <li>Ramoya</li>
+    <li>Ellen</li>
+    <li>Alicia</li>
+    <li>Ellained</li>
+    <li>Shiela</li>
+</ul>
+
+<p>Rafael</p>
+<p>Kien</p>
+<p>Aikee</p>
+<p>Lianor</p>
+
+    
+</body>
+</html>

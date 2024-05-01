@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Webpage</title>
+
+    <script src="https://kit.fontawesome.com/6a7678e057.js" crossorigin="anonymous"></script>
+
+    <style>
+        * {
+            padding:0;
+            margin:0;
+            box-sizing:border-box;
+        }
+        header {
+            background: url(https://source.unsplash.com/daily)
+            no-repeat center center / cover;
+            width: 100vw;
+            height: 100vh;
+            /* padding-top: 220px; */
+        }
+
+
+        header h1 {
+            color: white;
+            font-size: 60px;
+            text-align:center;
+            /* margin-top: 50px; */
+        }
+
+        header p {
+            color: white;
+            font-size: 40px;
+            text-align:center;
+        }
+
+        nav {
+            background-color: #D8D9DA;
+            opacity: 0.5;
+            height: 80px;
+            margin-bottom: 200px;
+        }
+        
+        nav ul {
+            margin-top: 20px;
+            float:right;
+        }
+
+        nav li {
+            list-style-type: none;
+            float:left;
+            margin-right: 20px;
+            font-size: 22px;
+            font-weight: bold;
+            color:black;
+        }
+
+        nav li:hover {
+            color:black;
+            text-decoration:underline;
+            cursor:pointer;
+        }
+
+        .clr {
+            clear:both;
+        }
+
+        main {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        main h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            padding-top: 40px;
+            height: 100px;
+            background: #333;
+            color:white;
+            text-align: center;
+        }
+
+        header i {
+            display:none !important;
+        }
+
+        main {
+            margin: 50px 0;
+            padding: 20px;
+        }
+
+        @media only screen and (max-width: 500px) {
+            #navigation {
+                display: none;
+            }
+
+            header i {
+                display:block !important;
+                font-size: 36px;
+                margin: 0 0 100px 20px;
+
+            }
+
+            nav {
+                display: none;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+
+    <header>
+        <i class="fas fa-bars"></i>
+        <nav>
+            <ul id="navigation">
+                <li>Home</li>
+                <li>About</li>
+                <li>Profile</li>
+            </ul>
+
+            <div class="clr"></div>
+        </nav>
+        <div class="clr"></div>
+        <h1>Welcome to Week 4 Lesson</h1>
+        <p>I hope you remember this</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo impedit minima saepe molestiae. Voluptates eos ratione facilis alias consequatur temporibus porro placeat. Omnis sapiente ipsa accusamus ratione doloribus vel consequatur.</p>
+        </section>
+    </main>
+
+    <footer>
+        Copyright &copy;
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Icons</title>
+
+    <script src="https://kit.fontawesome.com/6a7678e057.js" crossorigin="anonymous"></script>
+
+    <style>
+
+        body {
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 50px;
+            background: #151515;
+        }
+
+        .container {
+            padding: 20px;
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            gap: 20px;
+        }
+        a {
+            text-decoration:none;
+        }
+
+        .icon {
+            /* border: 1px solid green; */
+            /* background: green; */
+            color:white;
+            border-radius:50%;
+            padding: 10px;
+
+            position:relative;
+
+            z-index:100;
+        }
+
+        .icon::after {
+            content:"";
+            position:absolute;
+            top:0;
+            left:0;
+
+            z-index:-1;
+
+            width: 100%;
+            height:100%;
+
+            /* background:#fff; */
+            border-radius:50%;
+
+            box-shadow: inset 0 0 0 1px #16ABB5;
+
+            transition: 1s all ease-in-out;
+        }
+
+        .icon:hover {
+            color:black;
+        }
+        
+        .icon:hover::after {
+            box-shadow: inset 0 0 0 60px #16ABB5;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <a href="#" class="icon">
+            <i class="fa fa-home"></i>
+        </a>
+
+        <a href="#" class="icon">
+            <i class="fa fa-user"></i>
+        </a>
+
+        <a href="#" class="icon">
+            <i class="fas fa-wrench"></i>
+        </a>
+    </div>
+    
+</body>
+</html>
